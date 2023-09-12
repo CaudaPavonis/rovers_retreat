@@ -1,10 +1,80 @@
 /* Global styles */
-body {
-    font-family: Arial, sans-serif;
+
+/* CSS Reset Normalize Styles */
+body,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+dl,
+dd,
+ul,
+ol,
+li {
     margin: 0;
     padding: 0;
 }
 
+/* Box Sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Colors and Backgrounds */
+body {
+    color: #333333;
+    background-color: #FFFFFF;
+}
+
+/* Spacing and Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    /* Additional responsive styles for smaller screens */
+    /* ... */
+}
 /* Header section */
 header {
     background-color: white;
