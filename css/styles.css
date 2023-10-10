@@ -1,119 +1,93 @@
-/* Global styles */
+/* Normalization/global styles */
 
-/* CSS Reset Normalize Styles */
-body,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-dl,
-dd,
-ul,
-ol,
-li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Box Sizing */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
-/* Typography */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-a {
-    color: #0000FF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Colors and Backgrounds */
-body {
-    color: #333333;
     background-color: #FFFFFF;
+    font-family: "Figtree", sans-serif;
 }
 
-/* Spacing and Layout */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/* Responsive Design - mobile first */
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .container {
         padding: 10px;
     }
-
-    /* Additional responsive styles for smaller screens */
-    /* ... */
-}
-/* Header section */
-header {
-    background-color: white;
-    padding: 20px;
+    /* Additional responsive styles for larger screens */
 }
 
-.icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+/* Header */
+
+.logo-img {
+    display: block;
+    margin-top: -15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 325px;
+    height: auto;
 }
 
-.icon {
-    width: 350px;
-    height: 300px;
-}
-
-h1 {
+.logo-text {
+    font-family: "Montagu Slab", "Figtree", sans-serif;
     font-size: 28px;
-    font-family: 'Montagu Slab', serif;
-    font-weight: bolder;
-    color: #333;
+    color: #222;
+    font-weight: bold;
     text-align: center;
-    margin: 0;
+    margin-top: -20px;
+    margin-bottom: 0px;
 }
 
-.subtitle {
+.logo-subtitle {
     font-size: 16px;
-    font-family: 'Figtree', cursive;
+    font-family: 'Figtree', sans-serif;
     font-style: italic;
     text-align: center;
     color: #8557cf;
     margin: 0;
+    margin-bottom: 15px;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: "Figtree", sans-serif;
+    color: #fff;
+}
+
+.hero-subtitle {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-family: "Figtree", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .nav {
-    background-color: #f2f2f2;
     padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav ul {
@@ -124,15 +98,27 @@ h1 {
 
 .nav li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .nav a {
     text-decoration: none;
-    color: #333;
+    color: #999;
 }
 
-/* Main content section */
+.nav a.active {
+    color: #FF0000;
+    /* Change this to your desired color for the active link */
+}
+
+nav li:not(:last-child)::after {
+    content: "/";
+    margin-left: 5px;
+    color: #999;
+}
+
+/* Main content */
+
 .content {
     padding: 20px;
 }
@@ -146,7 +132,8 @@ h1 {
     line-height: 1.5;
 }
 
-/* Sidebar section */
+/* Sidebar */
+
 .sidebar {
     padding: 20px;
     background-color: #f8f8f8;
@@ -154,3 +141,7 @@ h1 {
 
 .sidebar h3 {
     font-size
+
+/* Forms */
+
+/* Footer */
