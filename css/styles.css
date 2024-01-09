@@ -38,15 +38,15 @@ body {
     font-family: "Montagu Slab", "Figtree", sans-serif;
     font-size: 28px;
     color: #222;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     margin-top: -20px;
     margin-bottom: 0px;
 }
 
 .logo-subtitle {
-    font-size: 16px;
-    font-family: 'Figtree', sans-serif;
+    font-size: 24px;
+    font-family: "Allura", sans-serif;
     font-style: italic;
     text-align: center;
     color: #8557cf;
@@ -79,9 +79,11 @@ body {
     color: #fff;
 }
 
-img {
+.hero-container img {
+    height: 450px;
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 .nav {
@@ -106,9 +108,12 @@ img {
     color: #999;
 }
 
-.nav a.active {
-    color: #FF0000;
-    /* Change this to your desired color for the active link */
+.nav a:hover {
+    color: #4d7fa3;
+}
+
+.nav a:active {
+    color: #d44457;
 }
 
 nav li:not(:last-child)::after {
@@ -119,8 +124,17 @@ nav li:not(:last-child)::after {
 
 /* Main content */
 
+.caption {
+    color: #4d7fa3;
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
 .content {
     padding: 20px;
+    color: #4d7fa3;
 }
 
 .content h2 {
@@ -130,8 +144,13 @@ nav li:not(:last-child)::after {
 
 .content p {
     line-height: 1.5;
+    color: #d44457;
 }
 
+.content ul {
+    line-height: 1.5;
+    color: #d44457;
+}
 /* Sidebar */
 
 .sidebar {
@@ -145,3 +164,5 @@ nav li:not(:last-child)::after {
 /* Forms */
 
 /* Footer */
+
+footer .map
