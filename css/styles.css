@@ -9,9 +9,16 @@
     line-height: inherit;
 }
 
-body {
+:root {
     background-color: #FFFFFF;
     font-family: "Figtree", sans-serif;
+    --primary-color: #d44457;
+    --secondary-color: #4d7fa3;
+    --accent-color: #8557cf;
+    --black-color: #222;
+    --gray-color: #999;
+    --white-color: #fff;
+    --background-color: #f8f8f8;
 }
 
 /* Responsive Design - mobile first */
@@ -37,7 +44,7 @@ body {
 .logo-text {
     font-family: "Montagu Slab", "Figtree", sans-serif;
     font-size: 28px;
-    color: #222;
+    color: var(--black-color);
     font-weight: bolder;
     text-align: center;
     margin-top: -20px;
@@ -49,7 +56,7 @@ body {
     font-family: "Allura", sans-serif;
     font-style: italic;
     text-align: center;
-    color: #8557cf;
+    color: var(--accent-color);
     margin: 0;
     margin-bottom: 15px;
 }
@@ -65,7 +72,7 @@ body {
     transform: translate(-50%, -50%);
     font-size: 50px;
     font-family: "Figtree", sans-serif;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .hero-subtitle {
@@ -76,7 +83,7 @@ body {
     font-size: 12px;
     font-family: "Figtree", sans-serif;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .hero-container img {
@@ -105,36 +112,36 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #999;
+    color: var(--gray-color);
 }
 
 .nav a:hover {
-    color: #4d7fa3;
+    color: var(--primary-color);
 }
 
 .nav a:active {
-    color: #d44457;
+    color: var(--primary-color);
 }
 
 nav li:not(:last-child)::after {
     content: "/";
     margin-left: 5px;
-    color: #999;
+    color: var(--gray-color);
 }
 
-/* Main content */
-
 .caption {
-    color: #4d7fa3;
+    color: var(--secondary-color);
     font-weight: bolder;
     font-size: 24px;
     text-align: center;
     margin-bottom: 24px;
 }
 
+/* Main content */
+
 .content {
     padding: 20px;
-    color: #4d7fa3;
+    color: var(--secondary-color);
 }
 
 .content h2 {
@@ -144,18 +151,19 @@ nav li:not(:last-child)::after {
 
 .content p {
     line-height: 1.5;
-    color: #d44457;
+    color: var(--primary-color);
 }
 
 .content ul {
     line-height: 1.5;
-    color: #d44457;
+    color: var(--primary-color);
 }
+
 /* Sidebar */
 
 .sidebar {
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: var(--background-color);
 }
 
 .sidebar h3 {
