@@ -1,0 +1,83 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Tablets */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+line-height: 1.6;
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+}
+
+/* Desktops */
+@media only screen and (min-width : 1224px) {
+    h1 {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        margin-bottom: 24px;
+        line-height: 1.7;
+    }
+
+    .button {
+        padding: 14px 28px;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+}

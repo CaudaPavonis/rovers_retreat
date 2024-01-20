@@ -21,14 +21,19 @@
     --background-color: #f8f8f8;
 }
 
-/* Responsive Design - mobile first */
+/* Responsive Design - mobile styles (default) */
+    /* Styles */
 
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    /* Additional responsive styles for larger screens */
+/* Tablet styles */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
 }
+
+/* Desktops and laptops */
+@media only screen and (min-width : 1224px) {
+    /* Styles */
+}
+
 
 /* Header */
 
