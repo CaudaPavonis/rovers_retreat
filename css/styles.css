@@ -12,16 +12,128 @@
 :root {
     background-color: #FFFFFF;
     --font-family: "Lato", sans-serif;
-    --font-default-weight: 300;
-    --font-heavy-weight: 700;
     --primary-color: #d44457;
     --secondary-color: #4d7fa3;
     --accent-color: #8557cf;
-    --black-color: #222;
-    --gray-color: #999;
     --white-color: #fff;
-/*  background-color: #FFFFFF;
-    --background-color: #f8f8f8; /*
+    --gray-color: #999;
+    --black-color: #222;
+    --font-xmall-size: 12px;
+    --font-small-size: 14px;
+    --font-medium-size: 20px;
+    --font-mlarge-size: 22px;
+    --font-large-size: 28px;
+    --font-xlarge-size: 32px;
+    --font-light-weight: 300;
+    --font-normal-weight: 500;
+    --font-heavy-weight: 700;
+}
+/*  background-color: #f8f8f8; */
+
+.primary-small-normal {
+    color: var(--primary-color);
+    font-size: var(--font-small-size);
+    font-weight: ;
+}
+
+.primary-small-heavy {
+    color: var(--primary-color);
+    font-size: var(--font-small-size);
+    font-weight: var(--font-heavy-weight);
+}
+
+.primary-large-light {
+    color: var(--primary-color);
+    font-size: var(--font-large-size);
+    font-weight: var(--font-light-weight);
+}
+
+.primary-large-heavy {
+    color: var(--primary-color);
+    font-size: var(--font-large-size);
+    font-weight: var(--font-heavy-weight);
+}
+
+.secondary-small-light {
+    color: var(--secondary-color);
+    font-size: var(--font-small-size);
+    font-weight: var(--font-light-weight);
+}
+
+.secondary-small-light-allcaps {
+    color: var(--secondary-color);
+    font-size: var(--font-small-size);
+    font-weight: var(--font-light-weight);
+    text-transform: uppercase;
+}
+
+.secondary-medium-heavy {
+    color: var(--secondary-color);
+    font-size: var(--font-medium-size);
+    font-weight: var(--font-heavy-weight);
+}
+
+.secondary-mlarge-heavy {
+    color: var(--secondary-color);
+    font-size: var(--font-mlarge-size);
+    font-weight: var(--font-heavy-weight);
+}
+
+.white-small-light-allcaps {
+    color: var(--white-color);
+    font-size: var(--font-small-size);
+    font-weight: var(--font-light-weight);
+    text-transform: uppercase;
+}
+
+.white-mlarge-light-allcaps {
+    color: var(--white-color);
+    font-size: var(--font-mlarge-size);
+    font-weight: var(--font-light-weight);
+    text-transform: uppercase;
+}
+
+.white-xlarge-light {
+    color: var(--white-color);
+    font-size: var(--font-xlarge-size);
+    font-weight: var(--font-light-weight);
+}
+
+.gray-xsmall-light {
+    color: var(--gray-color);
+    font-size: var(--font-xmall-size);
+    font-weight: var(--font-light-weight);
+}
+
+.gray-xsmall-heavy {
+    color: var(--gray-color);
+    font-size: var(--font-xmall-size);
+    font-weight: var(--font-heavy-weight);
+}
+
+.gray-small-light {
+    color: var(--gray-color);
+    font-size: var(--font-small-size);
+    font-weight: var(--font-light-weight);
+}
+
+.gray-small-normal-allcaps {
+    color: var(--gray-color);
+    font-size: var(--font-small-size);
+    font-weight: ;
+    text-transform: uppercase;
+}
+
+.gray-small-heavy {
+    color: var(--gray-color);
+    font-size: var(--font-small-size);
+    font-weight: var(--font-heavy-weight);
+}
+
+.black-small-light {
+    color: var(--gray-color);
+    font-size: var(--font-small-size);
+    font-weight: var(--font-light-weight);
 }
 
 /* Responsive Design - mobile styles (default) */
@@ -43,9 +155,10 @@
     display: block;
     margin-top: -15px;
     margin-right: auto;
+    margin-bottom: -30px;
     margin-left: auto;
     width: 325px;
-    height: auto;
+    height: 180px;
 }
 
 .logo-text {
@@ -54,8 +167,7 @@
     color: var(--black-color);
     font-weight: bolder;
     text-align: center;
-    margin-top: -20px;
-    margin-bottom: 0px;
+    margin-bottom: -5px;
 }
 
 .logo-subtitle {
@@ -65,7 +177,7 @@
     text-align: center;
     color: var(--accent-color);
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .hero-container {
