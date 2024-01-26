@@ -11,19 +11,19 @@
 
 :root {
     background-color: #FFFFFF;
-    --font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
     --primary-color: #d44457;
     --secondary-color: #4d7fa3;
     --accent-color: #8557cf;
     --white-color: #fff;
     --gray-color: #999;
     --black-color: #222;
-    --font-xmall-size: 12px;
-    --font-small-size: 14px;
-    --font-medium-size: 20px;
-    --font-mlarge-size: 22px;
-    --font-large-size: 28px;
-    --font-xlarge-size: 32px;
+    --font-xsmall-size: 12px;
+    --font-small-size: 19px;
+    --font-medium-size: 24px;
+    --font-mlarge-size: 33px;
+    --font-large-size: 42px;
+    --font-xlarge-size: 50px;
     --font-light-weight: 300;
     --font-normal-weight: 500;
     --font-heavy-weight: 700;
@@ -33,32 +33,39 @@
 .primary-small-normal {
     color: var(--primary-color);
     font-size: var(--font-small-size);
-    font-weight: ;
+    font-weight: var(--font-normal-weight);
 }
+/* Text under small heavy orange header */
 
 .primary-small-heavy {
     color: var(--primary-color);
     font-size: var(--font-small-size);
     font-weight: var(--font-heavy-weight);
 }
+/* Map hours title
+    Some content */
 
 .primary-large-light {
     color: var(--primary-color);
     font-size: var(--font-large-size);
     font-weight: var(--font-light-weight);
 }
+/* Attention text 2 (Our Story > Why Fido's) */
 
 .primary-large-heavy {
     color: var(--primary-color);
     font-size: var(--font-large-size);
     font-weight: var(--font-heavy-weight);
 }
+/* Attention text 1 
+    (Your Dog's Happy Place > Now From...) */
 
 .secondary-small-light {
     color: var(--secondary-color);
     font-size: var(--font-small-size);
     font-weight: var(--font-light-weight);
 }
+/* Link caption */
 
 .secondary-small-light-allcaps {
     color: var(--secondary-color);
@@ -66,18 +73,21 @@
     font-weight: var(--font-light-weight);
     text-transform: uppercase;
 }
+/* Button text/outline */
 
 .secondary-medium-heavy {
     color: var(--secondary-color);
     font-size: var(--font-medium-size);
     font-weight: var(--font-heavy-weight);
 }
+/* Form title */
 
 .secondary-mlarge-heavy {
     color: var(--secondary-color);
     font-size: var(--font-mlarge-size);
     font-weight: var(--font-heavy-weight);
 }
+/* Hero image caption */
 
 .white-small-light-allcaps {
     color: var(--white-color);
@@ -85,6 +95,8 @@
     font-weight: var(--font-light-weight);
     text-transform: uppercase;
 }
+/* Hero image subtitle
+    Content text 1 */
 
 .white-mlarge-light-allcaps {
     color: var(--white-color);
@@ -92,52 +104,64 @@
     font-weight: var(--font-light-weight);
     text-transform: uppercase;
 }
+/* Link image text */
 
 .white-xlarge-light {
     color: var(--white-color);
     font-size: var(--font-xlarge-size);
     font-weight: var(--font-light-weight);
 }
+/* Hero image text */
 
 .gray-xsmall-light {
     color: var(--gray-color);
-    font-size: var(--font-xmall-size);
+    font-size: var(--font-xsmall-size);
     font-weight: var(--font-light-weight);
 }
+/* Form input extra info */
+
+.gray-xsmall-normal-allcaps {
+    color: var(--gray-color);
+    font-size: var(--font-xsmall-size);
+    font-weight: --font-normal-weight;
+    text-transform: uppercase;
+}
+/* Nav bar */
 
 .gray-xsmall-heavy {
     color: var(--gray-color);
-    font-size: var(--font-xmall-size);
+    font-size: var(--font-xsmall-size);
     font-weight: var(--font-heavy-weight);
 }
+/* Footer (various styles and colors too) */
 
 .gray-small-light {
     color: var(--gray-color);
     font-size: var(--font-small-size);
     font-weight: var(--font-light-weight);
 }
-
-.gray-small-normal-allcaps {
-    color: var(--gray-color);
-    font-size: var(--font-small-size);
-    font-weight: ;
-    text-transform: uppercase;
-}
+/* Small content
+    Form labels */
 
 .gray-small-heavy {
     color: var(--gray-color);
     font-size: var(--font-small-size);
     font-weight: var(--font-heavy-weight);
 }
+/* Map hours
+    Some content titles
+    (Our Story > Why Fido's > Our Facilities, etc.) */
 
 .black-small-light {
-    color: var(--gray-color);
+    color: var(--black-color);
     font-size: var(--font-small-size);
     font-weight: var(--font-light-weight);
 }
+/* Form content */
 
 /* Responsive Design - mobile styles (default) */
-    /* Styles */
+
+/* Styles */
 
 /* Tablet styles */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -189,10 +213,6 @@
     top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
-    font-family: var(--font-family);
-    font-weight: var(--font-default-weight);
-    color: var(--white-color);
 }
 
 .hero-subtitle {
@@ -200,11 +220,6 @@
     top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 12px;
-    font-family: var(--font-family);
-    font-weight: var(--font-default-weight);
-    color: var(--white-color);
-    text-transform: uppercase;
 }
 
 .hero-container img {
@@ -218,11 +233,6 @@
     padding: 10px;
     display: flex;
     justify-content: center;
-    font-family: var(--font-family);
-    font-weight: bold;
-    font-size: 14px;
-    color: var(--gray-color);
-    text-transform: uppercase;
 }
 
 .nav ul {
@@ -238,11 +248,10 @@
 
 .nav a {
     text-decoration: none;
-    color: var(--gray-color);
 }
 
 .nav a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .nav a:active {
@@ -256,10 +265,6 @@ nav li:not(:last-child)::after {
 }
 
 .caption {
-    color: var(--secondary-color);
-    font-family: var(--font-family);
-    font-weight: var(--font-heavy-weight);
-    font-size: 24px;
     text-align: center;
     margin-bottom: 24px;
 }
@@ -268,17 +273,10 @@ nav li:not(:last-child)::after {
 
 .content {
     padding: 20px;
-    color: var(--secondary-color);
-}
-
-.content h2 {
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .content p {
     line-height: 1.5;
-    color: var(--primary-color);
 }
 
 .content ul {
@@ -290,11 +288,9 @@ nav li:not(:last-child)::after {
 
 .sidebar {
     padding: 20px;
-    background-color: var(--background-color);
 }
 
 .sidebar h3 {
-    font-size
 
 /* Forms */
 
