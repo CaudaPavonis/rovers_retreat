@@ -12,151 +12,31 @@
 :root {
     background-color: #FFFFFF;
     font-family: "Lato", sans-serif;
-    --primary-color: #d44457;
-    --secondary-color: #4d7fa3;
-    --accent-color: #8557cf;
-    --white-color: #fff;
-    --gray-color: #999;
-    --black-color: #222;
-    --font-xsmall-size: 12px;
-    --font-small-size: 19px;
-    --font-medium-size: 24px;
-    --font-mlarge-size: 33px;
-    --font-large-size: 42px;
-    --font-xlarge-size: 50px;
-    --font-light-weight: 300;
-    --font-normal-weight: 500;
-    --font-heavy-weight: 700;
+    --primary: #d44457;
+    --secondary: #4d7fa3;
+    --accent: #8557cf;
+    --white: #fff;
+    --gray: #999;
+    --black: #222;
+    --xsmall: 12px;
+    --small: 19px;
+    --medium: 24px;
+    --mlarge: 33px;
+    --large: 42px;
+    --xlarge: 50px;
+    --light: 300;
+    --normal: 500;
+    --heavy: 700;
+}
+
+.gray-small-heavy {
+    color: var(--gray);
+    font-size: var(--small);
+    font-weight: var(--heavy);
 }
 /*  background-color: #f8f8f8; */
 
-.primary-small-normal {
-    color: var(--primary-color);
-    font-size: var(--font-small-size);
-    font-weight: var(--font-normal-weight);
-}
-/* Text under small heavy orange header */
 
-.primary-small-heavy {
-    color: var(--primary-color);
-    font-size: var(--font-small-size);
-    font-weight: var(--font-heavy-weight);
-}
-/* Map hours title
-    Some content */
-
-.primary-large-light {
-    color: var(--primary-color);
-    font-size: var(--font-large-size);
-    font-weight: var(--font-light-weight);
-}
-/* Attention text 2 (Our Story > Why Fido's) */
-
-.primary-large-heavy {
-    color: var(--primary-color);
-    font-size: var(--font-large-size);
-    font-weight: var(--font-heavy-weight);
-}
-/* Attention text 1 
-    (Your Dog's Happy Place > Now From...) */
-
-.secondary-small-light {
-    color: var(--secondary-color);
-    font-size: var(--font-small-size);
-    font-weight: var(--font-light-weight);
-}
-/* Link caption */
-
-.secondary-small-light-allcaps {
-    color: var(--secondary-color);
-    font-size: var(--font-small-size);
-    font-weight: var(--font-light-weight);
-    text-transform: uppercase;
-}
-/* Button text/outline */
-
-.secondary-medium-heavy {
-    color: var(--secondary-color);
-    font-size: var(--font-medium-size);
-    font-weight: var(--font-heavy-weight);
-}
-/* Form title */
-
-.secondary-mlarge-heavy {
-    color: var(--secondary-color);
-    font-size: var(--font-mlarge-size);
-    font-weight: var(--font-heavy-weight);
-}
-/* Hero image caption */
-
-.white-small-light-allcaps {
-    color: var(--white-color);
-    font-size: var(--font-small-size);
-    font-weight: var(--font-light-weight);
-    text-transform: uppercase;
-}
-/* Hero image subtitle
-    Content text 1 */
-
-.white-mlarge-light-allcaps {
-    color: var(--white-color);
-    font-size: var(--font-mlarge-size);
-    font-weight: var(--font-light-weight);
-    text-transform: uppercase;
-}
-/* Link image text */
-
-.white-xlarge-light {
-    color: var(--white-color);
-    font-size: var(--font-xlarge-size);
-    font-weight: var(--font-light-weight);
-}
-/* Hero image text */
-
-.gray-xsmall-light {
-    color: var(--gray-color);
-    font-size: var(--font-xsmall-size);
-    font-weight: var(--font-light-weight);
-}
-/* Form input extra info */
-
-.gray-xsmall-normal-allcaps {
-    color: var(--gray-color);
-    font-size: var(--font-xsmall-size);
-    font-weight: --font-normal-weight;
-    text-transform: uppercase;
-}
-/* Nav bar */
-
-.gray-xsmall-heavy {
-    color: var(--gray-color);
-    font-size: var(--font-xsmall-size);
-    font-weight: var(--font-heavy-weight);
-}
-/* Footer (various styles and colors too) */
-
-.gray-small-light {
-    color: var(--gray-color);
-    font-size: var(--font-small-size);
-    font-weight: var(--font-light-weight);
-}
-/* Small content
-    Form labels */
-
-.gray-small-heavy {
-    color: var(--gray-color);
-    font-size: var(--font-small-size);
-    font-weight: var(--font-heavy-weight);
-}
-/* Map hours
-    Some content titles
-    (Our Story > Why Fido's > Our Facilities, etc.) */
-
-.black-small-light {
-    color: var(--black-color);
-    font-size: var(--font-small-size);
-    font-weight: var(--font-light-weight);
-}
 /* Form content */
 
 /* Responsive Design - mobile styles (default) */
@@ -188,7 +68,7 @@
 .logo-text {
     font-family: "Montagu Slab", sans-serif;
     font-size: 28px;
-    color: var(--black-color);
+    color: var(--black);
     font-weight: bolder;
     text-align: center;
     margin-bottom: -5px;
@@ -199,34 +79,9 @@
     font-family: "Allura", sans-serif;
     font-style: italic;
     text-align: center;
-    color: var(--accent-color);
+    color: var(--accent);
     margin: 0;
     margin-bottom: 10px;
-}
-
-.hero-container {
-    position: relative;
-}
-
-.hero-text {
-    position: absolute;
-    top: 46%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero-subtitle {
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero-container img {
-    height: 450px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 
 .nav {
@@ -248,41 +103,135 @@
 
 .nav a {
     text-decoration: none;
+    color: var(--gray);
+    font-size: var(--xsmall);
+    font-weight: var(--normal);
 }
 
 .nav a:hover {
-    color: var(--secondary-color);
+    color: var(--secondary);
 }
 
-.nav a:active {
-    color: var(--primary-color);
+.nav a.active,
+.nav a.active:hover {
+    color: var(--primary);
 }
 
 nav li:not(:last-child)::after {
     content: "/";
     margin-left: 5px;
-    color: var(--gray-color);
+    color: var(--gray);
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: var(--xlarge);
+    font-weight: var(--light);
+}
+
+.hero-subtitle {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: var(--xsmall);
+    font-weight: var(--light);
+}
+
+.hero-container img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .caption {
     text-align: center;
     margin-bottom: 24px;
+    color: var(--secondary);
+    font-size: var(--mlarge);
+    font-weight: var(--heavy-);
 }
 
 /* Main content */
+
+h1 {
+    color: var(--primary);
+    font-size: var(--large);
+    font-weight: var(--heavy);
+}
+
+h2 {
+    color: var(--secondary);
+    font-size: var(--mlarge);
+    font-weight: var(--heavy);
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    width: 100%;
+}
 
 .content {
     padding: 20px;
 }
 
-.content p {
-    line-height: 1.5;
+.btn-style1 {
+    background-color: var(--white);
+    border-color: var(--secondary);
+    color: var(--secondary);
+    font-size: var(--xsmall);
+    font-weight: var(--light);
+    text-transform: uppercase;
 }
 
+.btn-style2 {
+
+}
+
+.btn-style3 {
+
+}
+
+/* Daycare & boarding grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.text-column {
+    color: var(--secondary);
+    font-size: var(--medium);
+    font-weight: var(--light);    padding: 10px;
+}
+
+/* for list of COVID rules on Dog Care & Health page */
 .content ul {
     line-height: 1.5;
-    color: var(--primary-color);
+    color: var(--primary);
 }
+
+/* Font colors */
+
 
 /* Sidebar */
 
