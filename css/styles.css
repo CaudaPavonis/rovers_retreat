@@ -18,40 +18,17 @@
     --white: #fff;
     --gray: #999;
     --black: #222;
-    --xsmall: 12px;
-    --small: 19px;
+    --xxsmall: 11px;
+    --xsmall: 13px;
     --medium: 24px;
     --mlarge: 33px;
     --large: 42px;
-    --xlarge: 50px;
+    --xlarge: 60px;
     --light: 300;
     --normal: 500;
     --heavy: 700;
 }
-
-.gray-small-heavy {
-    color: var(--gray);
-    font-size: var(--small);
-    font-weight: var(--heavy);
-}
 /*  background-color: #f8f8f8; */
-
-
-/* Form content */
-
-/* Responsive Design - mobile styles (default) */
-
-/* Styles */
-
-/* Tablet styles */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    /* Styles */
-}
-
-/* Desktops and laptops */
-@media only screen and (min-width : 1224px) {
-    /* Styles */
-}
 
 /* Header */
 
@@ -106,6 +83,7 @@
     color: var(--gray);
     font-size: var(--xsmall);
     font-weight: var(--normal);
+    text-transform: uppercase;
 }
 
 .nav a:hover {
@@ -127,26 +105,6 @@ nav li:not(:last-child)::after {
     position: relative;
 }
 
-.hero-text {
-    position: absolute;
-    top: 46%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--white);
-    font-size: var(--xlarge);
-    font-weight: var(--light);
-}
-
-.hero-subtitle {
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--white);
-    font-size: var(--xsmall);
-    font-weight: var(--light);
-}
-
 .hero-container img {
     height: 450px;
     width: 100%;
@@ -164,13 +122,50 @@ nav li:not(:last-child)::after {
 
 /* Main content */
 
+/* Hero text */
 h1 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: var(--xlarge);
+    font-weight: var(--light);
+}
+
+/* Hero text subtitle */
+h2 {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: var(--xsmall);
+    font-weight: var(--light);
+}
+
+/* Top level content heading */
+h3 {
+    text-indent: 150px;
+    margin-bottom: 50px;
     color: var(--primary);
     font-size: var(--large);
     font-weight: var(--heavy);
 }
 
-h2 {
+/* Image text */
+h4 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: var(--large);
+    font-weight: var(--light);
+}
+
+/* Second level content heading */
+h5 {
     color: var(--secondary);
     font-size: var(--mlarge);
     font-weight: var(--heavy);
@@ -246,3 +241,15 @@ button {
 /* Footer */
 
 footer .map
+
+/* Responsive Design */
+
+/* Smartphones (portrait and landscape) */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        /* Styles */
+    }
+
+/* Tablet styles */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        /* Styles */
+    }
