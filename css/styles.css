@@ -12,8 +12,8 @@
 :root {
     background-color: #FFFFFF;
     font-family: "Lato", sans-serif;
-    --primary: #d44457;
-    --secondary: #4d7fa3;
+    --primary: #d65f38;
+    --secondary: #6892af;
     --accent: #8557cf;
     --white: #fff;
     --gray: #999;
@@ -21,14 +21,22 @@
     --xxsmall: 11px;
     --xsmall: 13px;
     --medium: 24px;
-    --mlarge: 33px;
-    --large: 42px;
+    --mlarge: 28px;
+    --large: 34px;
     --xlarge: 60px;
     --light: 300;
     --normal: 500;
-    --heavy: 700;
+    --heavy: 750;
 }
 /*  background-color: #f8f8f8; */
+
+.container {
+    margin: 0 auto;
+    /*max-width: 1000px;*/
+    /*width: 80%;*/
+    padding-right: 50px;
+    padding-left: 50px;
+}
 
 /* Header */
 
@@ -114,23 +122,37 @@ nav li:not(:last-child)::after {
 
 .caption {
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     color: var(--secondary);
-    font-size: var(--mlarge);
-    font-weight: var(--heavy-);
+    font-size: var(--medium);
+    font-weight: var(--heavy);
 }
 
 /* Main content */
 
 /* Hero text */
-h1 {
+/*h1 {
     position: absolute;
     top: 46%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
     color: var(--white);
     font-size: var(--xlarge);
     font-weight: var(--light);
+    margin-bottom: 20px;
+}*/
+
+h1 {
+    position: absolute;
+    top: 46%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--white);
+    font-size: var(--xlarge);
+    font-weight: var(--light);
+    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 /* Hero text subtitle */
@@ -142,15 +164,21 @@ h2 {
     color: var(--white);
     font-size: var(--xsmall);
     font-weight: var(--light);
+    text-transform: uppercase;
+    margin-top: 20px;
 }
 
 /* Top level content heading */
 h3 {
-    text-indent: 150px;
-    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 40px;
     color: var(--primary);
     font-size: var(--large);
     font-weight: var(--heavy);
+}
+
+h3:last-of-type {
+    margin-bottom: 25px;
 }
 
 /* Image text */
@@ -184,6 +212,14 @@ button {
     width: 100%;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--gray);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .content {
     padding: 20px;
 }
@@ -211,6 +247,7 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-top: 25px;
 }
 
 .text-column {
