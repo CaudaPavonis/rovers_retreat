@@ -130,42 +130,30 @@ nav li:not(:last-child)::after {
 
 /* Main content */
 
-/* Hero text */
-/*h1 {
-    position: absolute;
-    top: 46%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-    color: var(--white);
-    font-size: var(--xlarge);
-    font-weight: var(--light);
-    margin-bottom: 20px;
-}*/
-
+/* Hero image title */
 h1 {
     position: absolute;
-    top: 46%;
+    top: 39%;
     left: 0;
     right: 0;
     text-align: center;
     color: var(--white);
     font-size: var(--xlarge);
     font-weight: var(--light);
-    margin-bottom: 40px;
-    padding-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-/* Hero text subtitle */
+/* Hero image subtitle */
 h2 {
     position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 56%;
+    left: 0;
+    right: 0;
+    text-align: center;
     color: var(--white);
     font-size: var(--xsmall);
     font-weight: var(--light);
     text-transform: uppercase;
-    margin-top: 20px;
 }
 
 /* Top level content heading */
@@ -192,7 +180,7 @@ h4 {
     font-weight: var(--light);
 }
 
-/* Second level content heading */
+/* First level content heading */
 h5 {
     color: var(--secondary);
     font-size: var(--mlarge);
@@ -233,13 +221,9 @@ hr {
     text-transform: uppercase;
 }
 
-.btn-style2 {
+.btn-style2 {}
 
-}
-
-.btn-style3 {
-
-}
+.btn-style3 {}
 
 /* Daycare & boarding grid */
 
@@ -253,7 +237,8 @@ hr {
 .text-column {
     color: var(--secondary);
     font-size: var(--medium);
-    font-weight: var(--light);    padding: 10px;
+    font-weight: var(--light);
+    padding: 10px;
 }
 
 /* for list of COVID rules on Dog Care & Health page */
@@ -273,20 +258,19 @@ hr {
 
 .sidebar h3 {
 
-/* Forms */
+    /* Forms */
 
-/* Footer */
+    /* Footer */
 
-footer .map
+    footer .map
+    /* Responsive Design */
 
-/* Responsive Design */
-
-/* Smartphones (portrait and landscape) */
+    /* Smartphones (portrait and landscape) */
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         /* Styles */
     }
 
-/* Tablet styles */
+    /* Tablet styles */
     @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
         /* Styles */
     }
