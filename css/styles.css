@@ -1,4 +1,4 @@
-/* Global styles */
+/* GLOBAL STYLES */
 
 * {
     box-sizing: border-box;
@@ -18,8 +18,8 @@
     --white: #fff;
     --gray: #999;
     --black: #222;
-    --xxsmall: 11px;
-    --xsmall: 13px;
+    --xsmall: 11px;
+    --small: 13px;
     --medium: 24px;
     --mlarge: 28px;
     --large: 34px;
@@ -28,7 +28,6 @@
     --normal: 500;
     --heavy: 750;
 }
-/*  background-color: #f8f8f8; */
 
 .container {
     margin: 0 auto;
@@ -38,11 +37,9 @@
     padding-left: 50px;
 }
 
-/* Fonts */
+/* HEADER */
 
-
-
-/* Header */
+/* Logo */
 
 .logo-img {
     display: block;
@@ -73,6 +70,8 @@
     margin-bottom: 10px;
 }
 
+/* Nav bar */
+
 .nav {
     padding: 10px;
     display: flex;
@@ -93,7 +92,7 @@
 .nav a {
     text-decoration: none;
     color: var(--gray);
-    font-size: var(--xsmall);
+    font-size: var(--small);
     font-weight: var(--normal);
     text-transform: uppercase;
 }
@@ -113,6 +112,8 @@ nav li:not(:last-child)::after {
     color: var(--gray);
 }
 
+/* Hero image */
+
 .hero-container {
     position: relative;
 }
@@ -124,17 +125,7 @@ nav li:not(:last-child)::after {
     object-position: center;
 }
 
-.caption {
-    text-align: center;
-    margin-bottom: 20px;
-    color: var(--secondary);
-    font-size: var(--medium);
-    font-weight: var(--heavy);
-}
-
-/* Main content */
-
-/* Hero image title */
+/* title */
 h1 {
     position: absolute;
     top: 39%;
@@ -147,7 +138,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Hero image subtitle */
+/* subtitle */
 h2 {
     position: absolute;
     top: 56%;
@@ -155,24 +146,23 @@ h2 {
     right: 0;
     text-align: center;
     color: var(--white);
-    font-size: var(--xsmall);
+    font-size: var(--small);
     font-weight: var(--light);
     text-transform: uppercase;
 }
 
-/* Image text */
-h3 {
-    position: absolute;
-    top: 46%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--white);
-    font-size: var(--large);
-    font-weight: var(--light);
+.caption {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secondary);
+    font-size: var(--medium);
+    font-weight: var(--heavy);
 }
 
-/* Top level content header */
-h4 {
+/* MAIN CONTENT */
+
+/* heading 1 */
+h3 {
     text-align: center;
     margin-bottom: 40px;
     color: var(--primary);
@@ -180,12 +170,12 @@ h4 {
     font-weight: var(--heavy);
 }
 
-h4:last-of-type {
+h3:last-of-type {
     margin-bottom: 25px;
 }
 
-/* Secondary level content heading */
-h5 {
+/* heading 2 */
+h4 {
     color: var(--secondary);
     font-size: var(--mlarge);
     font-weight: var(--heavy);
@@ -195,13 +185,48 @@ p {
     line-height: 1.5;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+/* Body fonts */
+
+.body1 {
+    color: var(--gray);
+    font-size: var(--small);
+    font-weight: var(--light);
 }
 
-button {
-    width: 100%;
+.body2 {
+    color: var(--primary);
+    font-size: var(--small);
+    font-weight: var(--light);
+}
+
+.body3 {
+    color: var(--secondary);
+    font-size: var(--small);
+    font-weight: var(--light);
+}
+
+.body1-h {
+    color: var(--gray);
+    font-size: var(--small);
+    font-weight: var(--heavy);
+}
+
+.body2-h {
+    color: var(--primary);
+    font-size: var(--small);
+    font-weight: var(--heavy);
+}
+
+.body3-h {
+    color: var(--secondary);
+    font-size: var(--small);
+    font-weight: var(--heavy);
+}
+
+.pull-quote {
+    color: var(--primary);
+    font-size: var(--large);
+    font-weight: var(--light);
 }
 
 hr {
@@ -212,30 +237,47 @@ hr {
     margin-bottom: 20px;
 }
 
-.content {
-    padding: 20px;
-}
+/* GRIDS */
 
-.btn-style1 {
-    background-color: var(--white);
-    border-color: var(--secondary);
-    color: var(--secondary);
-    font-size: var(--xsmall);
-    font-weight: var(--light);
-    text-transform: uppercase;
-}
+/* General grids */
 
-.btn-style2 {}
-
-.btn-style3 {}
-
-/* Daycare & boarding grid */
+/* Daycare & boarding (landing page) */
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     margin-top: 25px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* image text */
+h5 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: var(--large);
+    font-weight: var(--light);
+}
+
+button {
+    width: 100%;
+}
+
+/* grid container button */
+.button-g {
+    background-color: var(--white);
+    border-color: var(--secondary);
+    color: var(--secondary);
+    font-size: var(--small);
+    font-weight: var(--light);
+    text-transform: uppercase;
 }
 
 .text-column {
@@ -245,36 +287,47 @@ hr {
     padding: 10px;
 }
 
-/* for list of COVID rules on Dog Care & Health page */
-.content ul {
-    line-height: 1.5;
-    color: var(--primary);
+/* FORMS */
+
+/* form title */
+.title-f {
+    color: var(--secondary);
+    font-size: var(--medium);
+    font-weight: var(--heavy)
 }
 
-/* Font colors */
+/* form labels */
+.label {
+    color: var(--gray);
+    font-size: var(--small);
+    font-weight: var(--light);
+}
 
+label-s: gray-xsmall-light
+/*  */
 
-/* Sidebar */
+button-f:
+
+/* SIDEBAR */
 
 .sidebar {
     padding: 20px;
 }
 
-.sidebar h3 {
+/* FOOTER */
 
-    /* Forms */
+footer
 
-    /* Footer */
+.map
 
-    footer .map
-    /* Responsive Design */
+/* Responsive Design */
 
-    /* Smartphones (portrait and landscape) */
+/* Smartphones (portrait and landscape) */
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         /* Styles */
     }
 
-    /* Tablet styles */
+/* Tablet styles */
     @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-        /* Styles */
+    /* Styles */
     }
