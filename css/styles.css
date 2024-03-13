@@ -125,7 +125,7 @@ nav li:not(:last-child)::after {
     object-position: center;
 }
 
-/* title */
+/* hero image title */
 h1 {
     position: absolute;
     top: 39%;
@@ -138,7 +138,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* subtitle */
+/* hero image subtitle */
 h2 {
     position: absolute;
     top: 56%;
@@ -185,6 +185,14 @@ p {
     line-height: 1.5;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--gray);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Body fonts */
 
 .body1 {
@@ -229,21 +237,11 @@ p {
     font-weight: var(--light);
 }
 
-hr {
-    border: none;
-    height: 1px;
-    background-color: var(--gray);
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 /* GRIDS */
-
-/* General grids */
 
 /* Daycare & boarding (landing page) */
 
-.grid-container {
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
@@ -271,7 +269,7 @@ button {
 }
 
 /* grid container button */
-.button-g {
+.btn-g {
     background-color: var(--white);
     border-color: var(--secondary);
     color: var(--secondary);
@@ -280,43 +278,99 @@ button {
     text-transform: uppercase;
 }
 
-.text-column {
+.text-col {
     color: var(--secondary);
     font-size: var(--medium);
     font-weight: var(--light);
     padding: 10px;
 }
 
+/* Text grids */
+
 /* FORMS */
 
 /* form title */
-.title-f {
+.ttl-f {
     color: var(--secondary);
     font-size: var(--medium);
     font-weight: var(--heavy)
 }
 
 /* form labels */
-.label {
+.lbl {
     color: var(--gray);
     font-size: var(--small);
     font-weight: var(--light);
 }
 
-label-s: gray-xsmall-light
-/*  */
+/* small form labels */
+.lbl-s {
+    color: var(--gray);
+    font-size: var(--xsmall);
+    font-weight: var(--light);
+}
 
-button-f:
+/* form button */
+.btn-f {
+
+}
 
 /* SIDEBAR */
 
-.sidebar {
+.sdbr {
     padding: 20px;
 }
 
+
+/* sidebar title */
+.ttl-s {
+    color: var(--primary);
+    font-size: var(--small);
+    font-weight: var(--heavy);
+}
+
+/* sidebar main text */
+.main-s {
+    color: var(--gray);
+    font-size: var(--small);
+    font-weight: var(--heavy);
+}
+
+/* sidebar button text */
+.btn-s {
+    color: var(--white);
+    font-size: var(--medium);
+    font-weight: var(--light);
+    text-transform: uppercase;
+}
 /* FOOTER */
 
-footer
+/* footer main text */
+.main-f {
+    color: var(--gray);
+    font-size: var(--small);
+    font-weight: var(--heavy);
+    text-align: center;
+}
+
+.main-f:first-of-type {
+    margin-top: 10px;
+}
+
+.main-f:last-of-type {
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+ }
 
 .map
 
