@@ -19,7 +19,7 @@
     --gray: #999;
     --black: #222;
     --xsmall: 11px;
-    --small: 13px;
+    --small: 16px;
     --medium: 24px;
     --mlarge: 28px;
     --large: 34px;
@@ -188,7 +188,7 @@ p {
 hr {
     border: none;
     height: 1px;
-    background-color: var(--gray);
+    background-color: #e5e3e8;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -237,6 +237,16 @@ hr {
     font-weight: var(--light);
 }
 
+/* Random fonts */
+
+/* Grid (Daycare & Boarding) note */
+.grid-n {
+    color: var(--gray);
+    font-size: var(--medium);
+    font-weight: var(--light);
+    font-style: italic;
+}
+
 /* GRIDS */
 
 /* Daycare & boarding (landing page) */
@@ -251,6 +261,11 @@ hr {
 img {
     max-width: 100%;
     height: auto;
+    max-height: 80%;
+    object-fit: cover;
+    width: 450px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* image text */
@@ -364,11 +379,13 @@ button {
 .icons {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .icon {
     width: 50px;
     height: 50px;
+    margin-top: 30;
     margin-right: 10px;
  }
 
