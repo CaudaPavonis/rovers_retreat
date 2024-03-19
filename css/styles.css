@@ -376,7 +376,7 @@ button {
     margin-bottom: 10px;
 }
 
-.icons {
+/*.icons {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -387,7 +387,27 @@ button {
     height: 50px;
     margin-top: 30;
     margin-right: 10px;
+ }*/
+
+ /* new css from here */
+
+ footer {
+     text-align: center;
+     padding: 10px;
  }
+
+ .social-icons {
+     display: inline-block;
+ }
+
+ .social-icons a {
+     display: inline-block;
+     margin: 0 10px;
+     /* Adjust the margin as needed to space out the icons */
+ }
+
+/* new css ends here */
+ 
 
 .map
 
