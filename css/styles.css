@@ -19,7 +19,8 @@
     --gray: #999;
     --black: #222;
     --xsmall: 11px;
-    --small: 16px;
+    --small: 13px;
+    --smedium: 16px;
     --medium: 24px;
     --mlarge: 28px;
     --large: 34px;
@@ -43,9 +44,8 @@
 
 .logo-img {
     display: block;
-    margin-top: -15px;
     margin-right: auto;
-    margin-bottom: -30px;
+    margin-bottom: -10px;
     margin-left: auto;
     width: 325px;
     height: 180px;
@@ -189,7 +189,7 @@ hr {
     border: none;
     height: 1px;
     background-color: #e5e3e8;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -197,37 +197,37 @@ hr {
 
 .body1 {
     color: var(--gray);
-    font-size: var(--small);
+    font-size: var(--smedium);
     font-weight: var(--light);
 }
 
 .body2 {
     color: var(--primary);
-    font-size: var(--small);
+    font-size: var(--smedium);
     font-weight: var(--light);
 }
 
 .body3 {
     color: var(--secondary);
-    font-size: var(--small);
+    font-size: var(--smedium);
     font-weight: var(--light);
 }
 
 .body1-h {
     color: var(--gray);
-    font-size: var(--small);
+    font-size: var(--smedium);
     font-weight: var(--heavy);
 }
 
 .body2-h {
     color: var(--primary);
-    font-size: var(--small);
+    font-size: var(--smedium);
     font-weight: var(--heavy);
 }
 
 .body3-h {
     color: var(--secondary);
-    font-size: var(--small);
+    font-size: var(--smedium);
     font-weight: var(--heavy);
 }
 
@@ -237,25 +237,16 @@ hr {
     font-weight: var(--light);
 }
 
-/* Random fonts */
-
-/* Grid (Daycare & Boarding) note */
-.grid-n {
-    color: var(--gray);
-    font-size: var(--medium);
-    font-weight: var(--light);
-    font-style: italic;
-}
-
 /* GRIDS */
 
-/* Daycare & boarding (landing page) */
+/* Daycare & boarding (index.html) */
 
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     margin-top: 25px;
+    place-items: center;
 }
 
 img {
@@ -279,18 +270,18 @@ h5 {
     font-weight: var(--light);
 }
 
-button {
-    width: 100%;
-}
-
 /* grid container button */
 .btn-g {
     background-color: var(--white);
     border-color: var(--secondary);
     color: var(--secondary);
     font-size: var(--small);
-    font-weight: var(--light);
+    font-weight: var(--normal);
     text-transform: uppercase;
+    margin-top: -10px; 
+    width: 250px;
+    height: 55px;
+    text-align: center;
 }
 
 .text-col {
@@ -298,6 +289,15 @@ button {
     font-size: var(--medium);
     font-weight: var(--light);
     padding: 10px;
+    align-self: start;
+}
+
+/* Grid (Daycare & Boarding) note */
+.grid-n {
+    color: var(--gray);
+    font-size: var(--medium);
+    font-weight: var(--light);
+    font-style: italic;
 }
 
 /* Text grids */
@@ -314,7 +314,7 @@ button {
 /* form labels */
 .lbl {
     color: var(--gray);
-    font-size: var(--small);
+    font-size: var(--smedium);
     font-weight: var(--light);
 }
 
@@ -340,14 +340,14 @@ button {
 /* sidebar title */
 .ttl-s {
     color: var(--primary);
-    font-size: var(--small);
+    font-size: var(--smedium);
     font-weight: var(--heavy);
 }
 
 /* sidebar main text */
 .main-s {
     color: var(--gray);
-    font-size: var(--small);
+    font-size: var(--smedium);
     font-weight: var(--heavy);
 }
 
@@ -376,28 +376,20 @@ button {
     margin-bottom: 10px;
 }
 
-/*.icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    margin-top: 30;
-    margin-right: 10px;
- }*/
-
- /* new css from here */
-
- footer {
+footer {
      text-align: center;
      padding: 10px;
  }
 
+ /*apply to elements above footer to add space*/
+ .foot-space {
+    margin-bottom: 80px;
+ }
+
  .social-icons {
      display: inline-block;
+     height: auto;
+     width: 75px;
  }
 
  .social-icons a {
@@ -406,7 +398,6 @@ button {
      /* Adjust the margin as needed to space out the icons */
  }
 
-/* new css ends here */
  
 
 .map
