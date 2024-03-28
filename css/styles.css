@@ -23,7 +23,7 @@
     --smedium: 16px;
     --medium: 24px;
     --mlarge: 28px;
-    --large: 34px;
+    --large: 40px;
     --xlarge: 60px;
     --light: 300;
     --normal: 500;
@@ -245,18 +245,28 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    margin-top: 25px;
     place-items: center;
 }
 
-img {
+.grid-container {
+    position: relative;
+    /* new code */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container img {
     max-width: 100%;
     height: auto;
     max-height: 80%;
     object-fit: cover;
     width: 450px;
     display: block;
-    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* image text */
@@ -268,6 +278,7 @@ h5 {
     color: var(--white);
     font-size: var(--large);
     font-weight: var(--light);
+    text-transform: capitalize;
 }
 
 /* grid container button */
@@ -282,6 +293,19 @@ h5 {
     width: 250px;
     height: 55px;
     text-align: center;
+    margin-bottom: -10px;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.btn-g:hover {
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
+.btn-g:active,
+.btn-g:active:hover {
+    color: var(--white);
+    background-color: var(--secondary);
 }
 
 .text-col {
@@ -298,6 +322,7 @@ h5 {
     font-size: var(--medium);
     font-weight: var(--light);
     font-style: italic;
+    margin-top: 15px;
 }
 
 /* Text grids */
@@ -386,20 +411,21 @@ footer {
     margin-bottom: 80px;
  }
 
- .social-icons {
-     display: inline-block;
-     height: auto;
-     width: 75px;
- }
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
 
- .social-icons a {
-     display: inline-block;
-     margin: 0 10px;
-     /* Adjust the margin as needed to space out the icons */
- }
-
+.social-icons a {
+    margin: 0 10px;
+}
  
-
+.social-icons img {
+    width: 40px;
+    /* adjust size as needed */
+    height: 40px;
+    /* adjust size as needed */
+}
 .map
 
 /* Responsive Design */
