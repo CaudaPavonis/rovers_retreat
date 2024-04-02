@@ -426,7 +426,65 @@ footer {
     height: 40px;
     /* adjust size as needed */
 }
-.map
+
+.img-cont-f {
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.img-cont-f>p {
+    color: var(--gray);
+    font-size: var(--smedium);
+    font-weight: var(--normal);
+    text-align: center;
+}
+
+.img-cont-f>a {
+    color: var(--gray);
+    /* Change the color to blue */
+    text-decoration: underline;
+    /* Underline the text */
+    cursor: pointer;
+    /* Change cursor to pointer when hovering over the link */
+}
+    
+.img-cong-f>a:hover {
+    color: var(--secondary);
+}
+
+.img-cong-f>a:visited {
+    color: var(--gray);
+    /* Change color on hover to indicate interactivity */
+}
+
+/*a:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}*/
+
+.img-cont-f>img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+
 
 /* Responsive Design */
 
